@@ -106,5 +106,5 @@ def delete_item(key):
 
 if __name__ == '__main__':
     create_items_table()
-    app.run(debug=True)
-    #app.run(host='0.0.0.0', port=5001, debug=True)
+    #app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
