@@ -54,7 +54,11 @@ def delete_item_from_db(key):
     cursor.execute('DELETE FROM items WHERE key = ?', (key,))
     conn.commit()
     conn.close()
-
+    
+@app.route('/')
+def hello():
+    return "hello everyone"
+    
 @app.route('/items', methods=['GET'])
 def get_all_items():
     items = get_all_items_from_db()
