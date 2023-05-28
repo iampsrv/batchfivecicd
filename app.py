@@ -57,7 +57,7 @@ def delete_item_from_db(key):
     
 @app.route('/')
 def hello():
-    return "hello and welcome everyone"
+    return "hello and welcome everyone to learn about devops"
     
 @app.route('/items', methods=['GET'])
 def get_all_items():
