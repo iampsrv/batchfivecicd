@@ -40,7 +40,7 @@ jobs:
     
     - name: Run tests with coverage
       run: |
-          coverage run -m pytest
+          coverage run -m pytest test.py
           coverage xml -o coverage.xml
           coverage report -m
       working-directory: /home/runner/work/batchfivecicd/batchfivecicd
