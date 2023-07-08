@@ -50,3 +50,12 @@ jobs:
       with:
           name: coverage-report
           path: coverage.xml
+    - name: Build PyInstaller executable
+      run: pyinstaller --onefile app.py
+      working-directory: /home/runner/work/batchfivecicd/batchfivecicd
+
+    - name: Upload executable artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: executable
+        path: dist/
