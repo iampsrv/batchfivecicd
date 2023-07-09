@@ -2,9 +2,9 @@ name: Test Python application and Build & Push docker image to github package an
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 
 jobs:
